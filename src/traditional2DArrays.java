@@ -7,6 +7,7 @@ public class traditional2DArrays {
     int[][] myArr=new int[][]{ {1, 2, 3},{4, 5, 6,0} };
     System.out.println(myArr.length);
     System.out.println(myArr[1].length);
+        System.out.println(myArr[0].length);
      //jagged arrays
         int[][] myArray=new int[3][];
         myArray[0]=new int[3];
@@ -14,6 +15,7 @@ public class traditional2DArrays {
         //or
         myArray[0]=new int[]{1,2,3};
         myArray[1]=new int[]{1,2,3,4};
+        System.out.println(myArray[0].length);
         //or
 
 
