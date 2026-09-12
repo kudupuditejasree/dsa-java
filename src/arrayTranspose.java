@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class largestElementArray2D {
+public class arrayTranspose {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter number of rows:");
@@ -15,31 +15,21 @@ public class largestElementArray2D {
 
             }
         }
-        System.out.println("printing 2D arrays:");
-        for (int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                System.out.print(myArray[i][j]+" ");
+        System.out.println("printing 2D arrays(matrix):");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(myArray[i][j] + " ");
 
             }
             System.out.println();
         }
-
-
-        int max=Integer.MIN_VALUE;
-        System.out.println(max);
-
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if(max<myArray[i][j]){
-                    max=myArray[i][j];
-
-                }
-
+        System.out.println("transpose matrix:");
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+                System.out.print(myArray[j][i] + " ");
 
             }
+            System.out.println();
         }
-        System.out.println("tha largest element is:"+max);
-
     }
 }
