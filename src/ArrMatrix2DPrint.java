@@ -15,6 +15,7 @@ public class ArrMatrix2DPrint {
 
             }
         }
+        System.out.println("printing 2D arrays:");
         for (int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
                 System.out.print(myArray[i][j]+" ");
