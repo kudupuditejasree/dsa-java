@@ -8,12 +8,12 @@ public class pt {
             Scanner scanner=new Scanner(System.in);
             int num=scanner.nextInt();
 
-            for(int i=1;i<=6;i++){
-                for( i=1;i<=6;i++){
+            for(int i=1;i<=num;i++){
+                for( i=1;i<=num;i++){
                     System.out.println(1);
                     //system.out.print(" ");
                     //System.out.print(" ");
-                    //System.out.print(" "+(i+2));
+                   // System.out.print(" "+(i+2));
 
                 }
             }
