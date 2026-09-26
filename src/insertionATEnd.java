@@ -1,4 +1,4 @@
-public class insertWithoutsize {
+public class insertionATEnd {
     static void traverseArray(int[] arr1) {
         for (int i = 0; i < arr1.length; i++) {
             System.out.print(arr1[i] + " ");
@@ -8,7 +8,13 @@ public class insertWithoutsize {
             System.out.print(i + " ");
         }
         System.out.println();
+
+
+
     }
+
+
+
     static void insertAtBeginning(int[] arr1,int x) {
         int size=0;
         for(int num:arr1){
@@ -29,13 +35,29 @@ public class insertWithoutsize {
         arr1[0] = x;
         //size++;
         //catch(ArrayIndexOutOfBoundsException e){
-           // System.out.println(e);
+        // System.out.println(e);
 
+    }
+    static void insertAtEnd(int arr1[],int x) {
+        int size=0;
+        for(int num:arr1){
+            if(num!=0){
+                size++;
+            }
+            else{
+                break;
+            }
         }
+        arr1[size]=x;
+        size++;
+
+
+    }
+
 
 
     public static void main(String[] args) {
-        int[] arr = new int[6];
+        int[] arr = new int[10];
         //int size = 5;
         arr[0] = 10;
         arr[1] = 20;
@@ -51,8 +73,9 @@ public class insertWithoutsize {
         traverseArray(arr);
         insertAtBeginning(arr,89);
         traverseArray(arr);
+        insertAtEnd(arr,57);
+        traverseArray(arr);
     }
 
-    }
-
+}
 
