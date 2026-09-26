@@ -1,5 +1,5 @@
 public class operationsOnArrays {
-    static void traverseArray(int[] arr1,int size) {
+    static void traverseArray(int[] arr1,int size) {//parameters 1000
         for (int i = 0; i < size; i++) {
             System.out.print(arr1[i]+ " ");
         }
@@ -14,16 +14,18 @@ public class operationsOnArrays {
             i++;
         }
 
+
+
     }
     public static void main(String[] args) {
-        int[] arr=new int[15];
+        int[] arr=new int[15];//1000
         int size=5;
         arr[0]=10;
         arr[1]=20;
         arr[2]=30;
         arr[3]=40;
         arr[4]=50;
-        traverseArray(arr,size);
+        traverseArray(arr,size);//arguments 1000
 
 
 
