@@ -1,3 +1,4 @@
+package com.jennyslectures.basics;
 public class insertionATEnd {
     static void traverseArray(int[] arr1) {
         for (int i = 0; i < arr1.length; i++) {

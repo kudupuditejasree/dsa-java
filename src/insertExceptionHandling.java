@@ -1,3 +1,4 @@
+package com.jennyslectures.basics;
 public class insertExceptionHandling {
 
     static void traverseArray(int[] arr1) {
@@ -40,11 +41,37 @@ public class insertExceptionHandling {
 
 
         }
+
+    }
+    static void insertAtPosition(int[] arr1,int pos,int x) {
+        try {
+            int size = 0;
+            for (int num : arr1) {
+                if (num != 0) {
+                    size++;
+                } else {
+                    break;
+                }
+            }
+            if (pos < 0 || pos > size + 1) {
+                System.out.println("position is not valid");
+            } else {
+                for (int i = size; i <= pos; i--) {
+                    arr1[i] = arr1[i - 1];
+                }
+                arr1[pos - 1] = x;
+                size++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e);
+
+
+        }
     }
 
 
     public static void main(String[] args) {
-        int[] arr = new int[6];
+        int[] arr = new int[7];
         //int size = 5;
         arr[0] = 10;
         arr[1] = 20;
@@ -60,5 +87,8 @@ public class insertExceptionHandling {
         traverseArray(arr);
         insertAtBeginning(arr, 89);
         traverseArray(arr);
+        insertAtPosition(arr,3,99);
+        traverseArray(arr);
+
     }
 }
